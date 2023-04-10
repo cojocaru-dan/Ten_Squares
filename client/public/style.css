@@ -3,7 +3,7 @@
 body,
 body *,
 body *::before,
-body *::after {margin:0;padding:0;border:0;background:transparent;box-sizing:border-box;text-decoration:none;outline:none;font-family:inherit;}
+body *::after {margin:0;padding:0;border:0;box-sizing:border-box;text-decoration:none;outline:none;font-family:inherit;}
 ol, ul, li {list-style:none;display:block;}
 table {border-collapse: collapse;border-spacing:0;}
 a img {border: none;}
@@ -18,6 +18,51 @@ button,
 a{cursor: pointer; color: inherit;}
 textarea{resize: none;}
 
+body > div {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgba(67, 67, 249, 10%);
+  margin: auto;
+}
+
+div > div {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgba(67, 67, 249, 10%);
+}
+
+body > div:first-child > div > div > div > div > div > div > div > div > div {
+  position: relative;
+  bottom: 54px;
+  right: 55px;
+  background-color: rgb(67, 67, 249);
+  color: white;
+}
+
+body > div:first-child > div > div > div > div > div > div > div > div > div:hover {
+  transform: rotate(45deg);
+}
+
+body > div:last-child {
+  border-radius: 50%;
+}
+
+body > div:last-child div {
+  border-radius: 50%;
+}
+
+body > div:last-child > div > div > div > div > div > div > div > div > div {
+  background-color: rgb(67, 67, 249);
+  color: white;
+}
 /* CSS reset END */
 
 body{
